@@ -35,13 +35,10 @@ body {
 
 
 .title {
-  height: 10vh;
-  line-height: 10vh;
-  font-size: 8vh;
-  padding: 2.5vh;
-  margin: 0;
-  color: #ffffff;
   font-family: 'Manjari', sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  color: #ffffff;
 }
 .maintitle{
   font-family: 'Manjari', sans-serif;

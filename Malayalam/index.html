@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <title>Covid-19 Kerala Police Declaration Generator</title>
   <meta name="description" content="സ്വകാര്യ വാഹനങ്ങളില്‍ യാത്രചെയ്യുന്നവര്‍ക്ക് ആവിശ്യമായ കേരള പോലിസിന്‍റെ സത്യവാങ്മൂലം ഓണ്‍ലൈന്‍ പകര്‍പ്പ്‌" />
 
@@ -44,8 +47,9 @@
 </head>
 <body>
 
+<div class="container-fluid">
 <div class="row">
-  <div class="small-2 large-3 columns" id="sidebar">
+  <div class="col-sm-3 hidden-print" id="sidebar">
   <h2 class="title">പൂരിപ്പിക്കുക</h2>
   <input type="text" ng-model="Name" placeholder='പേര്'/>
   <input type="text" ng-model="Mobile_no" placeholder='മൊബൈല്‍ നമ്പര്‍'/>
@@ -62,11 +66,18 @@
   <input type="text" ng-model="Starting_place" placeholder='യാത്ര തുടങ്ങുന്ന സ്ഥലം'/>
   <input type="text" ng-model="End_Place" placeholder='യാത്ര അവസാനിക്കുന്ന സ്ഥലം'/>
   <input type="text" ng-model="Purpose" placeholder='യാത്രയുടെ ആവിശ്യം'/>
-  <input type="text" ng-model="Return" placeholder='തിരിച്ചു വരുന്ന തിയ്യതി'/>
-  <input type="text" ng-model="Date" placeholder='തിയ്യതി'/>
-  <input type="text" ng-model="Place" placeholder='സ്ഥലം'/>
+  <label>തിരിച്ചു വരുന്ന തിയ്യതി</label>
+  <div id="datepicker1" class="input-group date" data-date-format="dd-mm-yyyy">
+      <input class="form-control" type="text" ng-model="Return_Date" readonly />
+      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
   </div>
-  <div class="small-4 large-7 columns letter" id="document">
+  <input type="text" ng-model="Place" placeholder='സ്ഥലം'/>
+  <button class="btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
+  </div>
+
+
+
+  <div class="col-sm-7 " id="document">
    <center><img src="logo.png" width="150" height="150"></center>
     <div class="text">
     <div class="data">
@@ -78,16 +89,13 @@
     <strong>യാത്ര അവസാനിക്കുന്ന സ്ഥലം:</strong> {{End_Place}}</br>
     </div></br></br></br></br>
     <h2 class="maintitle">സത്യവാങ്മൂലം</h2>
-
-<div class="docs">
  <p>
 ഞാന്‍ {{Name}}, {{Vechicle_no}} എന്ന നമ്പറുള്ള {{Vechicle_Type}} കൂടെ
 {{Person_2}}‍ കൂടി {{Starting_place}}‍ നിന്നും {{End_Place}} ലേക്ക്‌ യാത്ര ചെയ്യുവാന്‍‍ അനുവാദം തരണമെന്ന്
-വിനീതമായി അപേക്ഷിക്കുന്നു. {{Return}}‍ തിയ്യതിയില്‍ തിരച്ചു പോകും.
+വിനീതമായി അപേക്ഷിക്കുന്നു. {{Return_Date}}‍ നു‍ തിരച്ചു വരും.
 </br>
 <strong>യാത്രയുടെ ആവശ്യം:</strong> {{Purpose}}</br>
 </p>
-</div>
 
  <div class="footer">
     <strong>സ്ഥലം:</strong> {{Place}}</br>
@@ -98,10 +106,17 @@
   </div>
   </div>
   </div>
+  </div>
+
+  <footer class="container-fluid hidden-print">
+  <p>Made By Kloudboy</p>
+</footer>
 </body>
 </html>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script><script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js'></script><script  src="./clscript.js"></script>
+
 
 </body>
 </html>
