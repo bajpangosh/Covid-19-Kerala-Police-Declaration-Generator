@@ -35,8 +35,8 @@
   <input type="text" ng-model="Starting_place" placeholder='യാത്ര തുടങ്ങുന്ന സ്ഥലം'/>
   <input type="text" ng-model="End_Place" placeholder='യാത്ര അവസാനിക്കുന്ന സ്ഥലം'/>
   <input type="text" ng-model="Purpose" placeholder='യാത്രയുടെ ആവിശ്യം'/>
-  <input type="text" ng-model="Return" placeholder='തിരിച്ചു വരുന്ന തിയ്യതിി'/>
-  <input type="text" ng-model="ctrl.myDate" placeholder='തിയ്യതി'/>
+  <input type="text" ng-model="Return" placeholder='തിരിച്ചു വരുന്ന തിയ്യതി'/>
+  <input type="text" ng-model="Date" placeholder='തിയ്യതി'/>
   <input type="text" ng-model="Place" placeholder='സ്ഥലം'/>
   </div>
   <div class="small-4 large-7 columns letter" id="document">
@@ -47,8 +47,8 @@
     <strong>മൊബൈല്‍ നമ്പര്‍:</strong> {{Mobile_no}}</br>
     <strong>വിലാസം:</strong> {{Address}}</br>
     <strong>വാഹനത്തിന്‍റെ നമ്പര്‍:</strong> {{Vechicle_no}}</br>
-    <strong>യാത്ര തുടങ്ങുന്ന സ്ഥലം:</strong> {{Address}}</br>
-    <strong>യാത്ര അവസാനിക്കുന്ന സ്ഥലം:</strong> {{Vechicle_no}}</br>
+    <strong>യാത്ര തുടങ്ങുന്ന സ്ഥലം:</strong> {{Starting_place}}</br>
+    <strong>യാത്ര അവസാനിക്കുന്ന സ്ഥലം:</strong> {{End_Place}}</br>
     </div></br></br></br></br>
     <h2 class="maintitle">സത്യവാങ്മൂലം</h2>
 
@@ -56,14 +56,13 @@
  <p>
 ഞാന്‍ {{Name}}, {{Vechicle_no}} എന്ന നമ്പറുള്ള {{Vechicle_Type}} കൂടെ
 {{Person_2}}‍ കൂടി {{Starting_place}}‍ നിന്നും {{End_Place}} ലേക്ക്‌ യാത്ര ചെയ്യുവാന്‍‍ അനുവാദം തരണമെന്ന്
-വിനീതമായി അപേക്ഷിക്കുന്നു. {{Starting_place}}‍ തിയ്യതിയില്‍ തിരച്ചു പോകും.
+വിനീതമായി അപേക്ഷിക്കുന്നു. {{Return}}‍ തിയ്യതിയില്‍ തിരച്ചു പോകും.
 </br>
-<strong>യാത്രയുടെ ആവശ്യം:</strong> {{Address}}</br>
-
- </p>
+<strong>യാത്രയുടെ ആവശ്യം:</strong> {{Purpose}}</br>
+</p>
 </div>
 
- <div class="people people2">
+ <div class="footer">
     <strong>സ്ഥലം:</strong> {{Place}}</br>
     <strong>തിയതി:</strong> {{Date}}</br>
     </div>
