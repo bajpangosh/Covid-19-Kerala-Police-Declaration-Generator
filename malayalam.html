@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Covid-19 Kerala Police Declaration Generator</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Manjari'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html ng-app="myApp">
+<head>
+	<title>Covid-19 Kerala Police Declaration</title>
+</script>
+
+</head>
+<body>
+
+
+<div class="row">
+  <div class="small-2 large-3 columns" id="sidebar">
+    <h1 class="title">Fields</h1>
+  <input type="text" ng-model="Name" placeholder='പേര്'/>
+  <input type="text" ng-model="Mobile_no" placeholder='മൊബൈല്‍ നമ്പര്‍'/>
+  <input type="text" ng-model="Address" placeholder='വിലാസം'/>
+  <input type="text" ng-model="Vechicle_no" placeholder='വാഹനത്തിന്‍റെ നമ്പര്‍'/>
+  <input type="text" ng-model="Vechicle_Type" placeholder='വാഹനത്തിന്‍റെ മോഡല്‍'/>
+  <input type="text" ng-model="Person_2" placeholder='ഒപ്പം ആരേലും ഉണ്ടോ?'/>
+  <input type="text" ng-model="Starting_place" placeholder='യാത്ര തുടങ്ങുന്ന സ്ഥലം'/>
+  <input type="text" ng-model="End_Place" placeholder='യാത്ര അവസാനിക്കുന്ന സ്ഥലം'/>
+  <input type="text" ng-model="Purpose" placeholder='യാത്രയുടെ ആവിശ്യം'/>
+  <input type="text" ng-model="Return" placeholder='തിരിച്ചു വരുന്ന തിയതി'/>
+  <input type="text" ng-model="Date" placeholder='Date'/>
+  <input type="text" ng-model="Place" placeholder='Place'/>
+    </div>
+  <div class="small-4 large-7 columns letter" id="document">
+   <center><img src="logo.png" width="150" height="150"></center>
+    <div class="text">
+     <div class="people people1">
+       Between</br>
+     <strong>പേര്:</strong> {{Name}}</br>
+    <strong>വിലാസം:</strong> {{Address}}</br>
+    <strong>വാഹനത്തിന്‍റെ നമ്പര്‍:</strong> {{Vechicle_no}}</br>
+    <strong>മൊബൈല്‍ നമ്പര്‍:</strong> {{Mobile_no}}</br>
+     </div></br></br></br></br>
+
+    <h2 class="maintitle">സത്യവാങ്മൂലം</h2>
+
+<div class="docs">
+ <p>
+ഞാന്‍ {{Name}}, {{Vechicle_no}} SVU മോഡല്‍ ഉള്ള വാഹനത്തില്‍
+കൂടെ വിജയലഷ്മിയും കൂടി പെരുംപടപ്പില്‍ നിന്നും കോട്ടപ്പടിയിലേക്ക്‌ യാത്ര ചെയ്യുവാന്‍‍ അനുവാദം തരണം 14-3-2020 തിയതില്‍‍ തിരച്ചു പോകും.
+യാത്രയുടെ ആവശ്യം ആണ്
+
+
+ </p>
+</div>
+
+ <div class="people people2">
+    <strong>സ്ഥലം:</strong> {{Place}}</br>
+    <strong>തിയതി:</strong> {{Date}}</br>
+    </div>
+
+  </div>
+  </div>
+  </div>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

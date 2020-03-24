@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Covid-19 Kerala Police Declaration Generator</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Manjari'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html ng-app="myApp">
+<head>
+	<title>Covid-19 Kerala Police Declaration</title>
+</script>
+
+</head>
+<body>
+
+<div class="row">
+  <div class="small-2 large-3 columns" id="sidebar">
+  <h2 class="title">പൂരിപ്പിക്കുക</h2>
+  <input type="text" ng-model="Name" placeholder='പേര്'/>
+  <input type="text" ng-model="Mobile_no" placeholder='മൊബൈല്‍ നമ്പര്‍'/>
+  <input type="text" ng-model="Address" placeholder='വിലാസം'/>
+  <input type="text" ng-model="Vechicle_no" placeholder='വാഹനത്തിന്‍റെ നമ്പര്‍'/>
+  <select name="model" ng-model="Vechicle_Type" placeholder='വാഹനത്തിന്‍റെ മോഡല്‍'/>
+  <option value="">ഏതു തരം വാഹനം</option>
+  <option value="കാറില്‍">കാറില്‍</option>
+  <option value="സ്കൂട്ടറില്‍">സ്കൂട്ടറില്‍‍</option>
+  <option value="സൈക്കിളില്‍">സൈക്കിളില്‍</option>
+  <option value="എസ്.യു.വിയില്‍">എസ്.യു.വിയില്‍</option>
+  <option value="മോട്ടോര്‍സൈക്കിളില്‍">മോട്ടോര്‍സൈക്കിളില്‍</option>
+  <input type="text" ng-model="Person_2" placeholder='ഒപ്പമുള്ള ആളുടെ പേര്'/>
+  <input type="text" ng-model="Starting_place" placeholder='യാത്ര തുടങ്ങുന്ന സ്ഥലം'/>
+  <input type="text" ng-model="End_Place" placeholder='യാത്ര അവസാനിക്കുന്ന സ്ഥലം'/>
+  <input type="text" ng-model="Purpose" placeholder='യാത്രയുടെ ആവിശ്യം'/>
+  <input type="text" ng-model="Return" placeholder='തിരിച്ചു വരുന്ന തിയ്യതിി'/>
+  <input type="text" ng-model="ctrl.myDate" placeholder='തിയ്യതി'/>
+  <input type="text" ng-model="Place" placeholder='സ്ഥലം'/>
+  </div>
+  <div class="small-4 large-7 columns letter" id="document">
+   <center><img src="logo.png" width="150" height="150"></center>
+    <div class="text">
+    <div class="data">
+    <strong>പേര്:</strong> {{Name}}</br>
+    <strong>മൊബൈല്‍ നമ്പര്‍:</strong> {{Mobile_no}}</br>
+    <strong>വിലാസം:</strong> {{Address}}</br>
+    <strong>വാഹനത്തിന്‍റെ നമ്പര്‍:</strong> {{Vechicle_no}}</br>
+    <strong>യാത്ര തുടങ്ങുന്ന സ്ഥലം:</strong> {{Address}}</br>
+    <strong>യാത്ര അവസാനിക്കുന്ന സ്ഥലം:</strong> {{Vechicle_no}}</br>
+    </div></br></br></br></br>
+    <h2 class="maintitle">സത്യവാങ്മൂലം</h2>
+
+<div class="docs">
+ <p>
+ഞാന്‍ {{Name}}, {{Vechicle_no}} എന്ന നമ്പറുള്ള {{Vechicle_Type}} കൂടെ
+{{Person_2}}‍ കൂടി {{Starting_place}}‍ നിന്നും {{End_Place}} ലേക്ക്‌ യാത്ര ചെയ്യുവാന്‍‍ അനുവാദം തരണമെന്ന്
+വിനീതമായി അപേക്ഷിക്കുന്നു. {{Starting_place}}‍ തിയ്യതിയില്‍ തിരച്ചു പോകും.
+</br>
+<strong>യാത്രയുടെ ആവശ്യം:</strong> {{Address}}</br>
+
+ </p>
+</div>
+
+ <div class="people people2">
+    <strong>സ്ഥലം:</strong> {{Place}}</br>
+    <strong>തിയതി:</strong> {{Date}}</br>
+    </div>
+
+  </div>
+  </div>
+  </div>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
