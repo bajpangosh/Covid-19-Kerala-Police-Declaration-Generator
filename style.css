@@ -1,0 +1,50 @@
+body{
+  background-color: #303030;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+h2{
+  font-size: 26px;
+  font-weight: 500;
+}
+
+#document{
+  background-color: #ffffff;
+  margin: 40px;
+  box-shadow: -20px -14px -28px rgba(255,255,255,0.25), -14px -10px -10px rgba(255,255,255,0.22);
+}
+#sidebar{
+  margin-top: 40px;
+  background-color:#424242;
+  position: fixed;
+  
+}
+
+.text{
+margin: 40px;
+text-align: justify;
+margin-top:200px;
+}
+
+body {
+  background: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 8vh;
+  padding: 2.5vh;
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Unica One', cursive;
+}
+.maintitle{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat, serif;
+}
