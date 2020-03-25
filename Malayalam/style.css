@@ -2,6 +2,8 @@ body{
   background-color: #303030;
   font-family: 'Manjari', sans-serif;
   font-size: 17px;
+  display: flex;
+  flex-direction: column;
 }
 h2{
   font-family: 'Manjari', sans-serif;
@@ -23,14 +25,6 @@ h2{
 margin: 40px;
 text-align: justify;
 margin-top:200px;
-}
-
-body {
-  background: #303030;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 
